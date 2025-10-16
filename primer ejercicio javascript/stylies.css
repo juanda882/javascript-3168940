@@ -1,0 +1,27 @@
+#imagen{
+    display: flex;
+    justify-content: center;
+}
+
+#snoopy{
+    border-radius: 15px;
+    width: 300px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filterBN{
+    filter: grayscale(100%);
+}
+
+.Blur{
+    filter: blur(15px);
+}
+
+.Zoom{
+    transform: scale(1.5) rotate(15deg);
+}
