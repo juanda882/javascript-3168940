@@ -1,0 +1,204 @@
+body {
+  margin: 0%;
+  padding:0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+ .fondo 
+ {position: relative;
+    width: 750px;
+    height: 500px;
+    background-image: url(/fondo/unnamed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    border: solid 5px brown;
+}
+
+@keyframes flotar_escenario {
+  0% {
+    transform: translateY(0px); 
+  }
+  50% {
+    transform: translateY( -0px); 
+  }
+  100% {
+    transform: translateY(0px); 
+  }
+}
+
+.nube {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  left: 150px;
+  animation: movimiento_nubes 60s linear infinite;
+}
+
+@keyframes movimiento_nubes {
+  0% {
+    left: 750px;
+  }
+  100% {
+    left: -200px;
+  }
+}
+.nube_2 {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  left: 0px;
+  top: 100px;
+  animation: movimiento_nubes 60s linear infinite;
+}
+
+.nube_3 {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  left: 440px;
+  top: 120px;
+  animation: movimiento_nubes 60s linear infinite;
+}
+
+.mario {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  top: 396px;
+  left: 290px;
+}
+
+.bloque {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 320px;
+  left: 316px;
+}
+.cagada {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 455px;
+  left: 600px;
+  animation: cagada_movediza 2s ease-in-out infinite alternate;;
+}
+.tortuga {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 350px;
+  left: 50px;
+  cursor: pointer;
+  animation: mover_lateral 2s ease-in-out infinite alternate;
+}
+
+
+
+.contador {
+  background-color: rgb(67, 67, 129);
+  width: 100px;
+  height: 50px;
+  border: solid 2px black;
+  position: absolute;
+  opacity: 0.8;
+  left: 600px;
+  top: 30px;
+}
+
+.score {
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.moneda{
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 300px;
+  left: 338px;
+  filter: drop-shadow(0px 0px 5px yellow) ;
+  opacity: 0;
+  
+}
+
+@keyframes saltar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+.mario_saltar {
+  animation: saltar 0.5s ease;
+}
+@keyframes golpear_bloque {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.bloque_saltar {
+  animation: golpear_bloque 0.5s ease;
+}
+
+.salir_moneda {
+  animation: salir_moneda 0.3s ease forwards;
+}
+@keyframes salir_moneda {
+  
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+
+}
+
+ @keyframes poner_cabezon {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(15);
+  }
+  70%{
+    transform: scale(10);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tortuga_cabezona {
+  animation: poner_cabezon 7s ease-in-out forwards;
+}
+
+@keyframes cagada_movediza {
+0%{
+  transform: translateX(-60px);
+}
+100%{
+  transform: translateX(36px)
+}
+
+} 
+
+/* SEGUNDO ESCENARIO */
+
+
+
