@@ -5,6 +5,43 @@ body {
   background-color: black;
 }
 
+.contenedorDs{
+  position: relative;
+  background-image: url(/fondo/unnamed.jpg);
+  width: 750px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    border: solid 5px brown;
+    gap: 20px;
+    justify-content: center;
+}
+
+.escenariosSg {
+  display: flex;           /* Coloca los elementos en fila */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  gap: 30px;               /* Espacio entre imágenes */
+  flex-wrap: wrap;         /* Si no caben, bajan a otra fila */
+}
+
+.escenariosSg img {
+  width: 150px;            /* Tamaño pequeño */
+  height: auto;            /* Mantiene proporción */
+  border-radius: 8px;      /* Bordes redondeados */
+  object-fit: cover;       /* Asegura que la imagen se vea bien */
+  transition: transform 0.3s;
+}
+
+.escenariosSg img:hover {
+  transform: scale(1.05);  /* Pequeño efecto al pasar el mouse */
+}
+
+
  .fondo 
  {position: relative;
     width: 750px;
@@ -198,7 +235,7 @@ body {
 
 } 
 
-/* SEGUNDO ESCENARIO */
+
 
 
 
