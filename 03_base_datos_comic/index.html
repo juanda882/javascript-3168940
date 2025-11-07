@@ -7,11 +7,62 @@
 </head>
 <body>
 
-    
+       <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volví a Nacer — Cómic Interactivo</title>
+</head>
+<body>
+  <header>
+    <h1 id="nombreComic"></h1>
+    <p><strong>Género:</strong> <span id="genero"></span></p>
+    <p><strong>Autores:</strong> <span id="autores"></span></p>
+    <p><strong>Miembros:</strong> <span id="members"></span></p>
+  </header>
 
+  <main>
+    <section id="sinopsis">
+      <h2>Sinopsis</h2>
+      <p id="descripcionComic"></p>
+    </section>
 
+    <section id="capitulos">
+      <h2>Capítulos</h2>
+      <div id="listaCapitulos">
+        <!-- Aquí se insertarán los capítulos dinámicamente -->
+      </div>
+    </section>
+  </main>
 
-    <script src="bd.js"></script>
-    <script src="app.js"></script>
+  <footer>
+    <p>© 2025 Volví a Nacer — Proyecto de Juan David y María Fernanda</p>
+  </footer>
+
+  <!-- Archivos JS -->
+  <script src="bd.js"></script>
+  <script>
+    // Mostrar información del cómic en el HTML
+    document.getElementById("nombreComic").textContent = comic.nombreComic;
+    document.getElementById("genero").textContent = comic.genero;
+    document.getElementById("autores").textContent = comic.autores;
+    document.getElementById("members").textContent = comic.members;
+    document.getElementById("descripcionComic").textContent = comic.sinopsis;
+
+    const contenedor = document.getElementById("listaCapitulos");
+
+    comic.capitulos.forEach(cap => {
+      const seccion = document.createElement("article");
+      seccion.innerHTML = `
+        <h3>${cap.name}</h3>
+        <p><strong>Año:</strong> ${cap.year}</p>
+        <p><strong>Personajes:</strong> ${cap.personajes}</p>
+        <p><strong>Descripción:</strong> ${cap.descripcion}</p>
+      `;
+      contenedor.appendChild(seccion);
+    });
+  </script>
 </body>
+</html>
 </html>
