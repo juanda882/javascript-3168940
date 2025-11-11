@@ -1,68 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-       <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volví a Nacer — Cómic Interactivo</title>
+  <title>Volví a Nacer - Comic</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 id="nombreComic"></h1>
-    <p><strong>Género:</strong> <span id="genero"></span></p>
-    <p><strong>Autores:</strong> <span id="autores"></span></p>
-    <p><strong>Miembros:</strong> <span id="members"></span></p>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Volví a Nacer</h1>
+      <p class="sinopsis">Carlos se encuentra en la playa reflexionando y se encuentra con una versión suya de cuando era niño.</p>
+    </div>
   </header>
 
-  <main>
-    <section id="sinopsis">
-      <h2>Sinopsis</h2>
-      <p id="descripcionComic"></p>
-    </section>
+  <section class="info">
+    <h2>Detalles del Cómic</h2>
+    <ul>
+      <li><strong>Género:</strong> Introspectivo</li>
+      <li><strong>Episodios:</strong> 1</li>
+      <li><strong>Autores:</strong> Juan David y María Fernanda</li>
+      <li><strong>Personajes:</strong> Carlos Vives y Carlos Niño</li>
+    </ul>
+  </section>
 
-    <section id="capitulos">
-      <h2>Capítulos</h2>
-      <div id="listaCapitulos">
-        <!-- Aquí se insertarán los capítulos dinámicamente -->
+  <section class="capitulos">
+    <h2>Capítulos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="ChatGPT Image 11 nov 2025, 16_55_39.png" alt="El llamado del mar">
+        <h3>El llamado del mar</h3>
+        <p>Carlos reflexiona en la playa y se encuentra a un niño frustrado.</p>
+        <span>Año: 2025</span>
       </div>
-    </section>
-  </main>
+
+      <div class="card">
+        <img src=" alt="Ecos del camino">
+        <h3>Ecos del camino</h3>
+        <p>Carlos y el niño se adentran en una aventura de recuerdos.</p>
+        <span>Año: 2025</span>
+      </div>
+
+      <div class="card">
+        <img src="ChatGPT Image 11 nov 2025, 17_10_08.png" alt="El despertar">
+        <h3>El despertar</h3>
+        <p>Carlos despierta en la playa agradecido por haber vuelto a ver su proceso.</p>
+        <span>Año: 2025</span>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Volví a Nacer — Proyecto de Juan David y María Fernanda</p>
+    <p>© 2025 Aluna | Proyecto “Volví a Nacer” por Juan David y María Fernanda</p>
   </footer>
 
-  <!-- Archivos JS -->
-  <script src="bd.js"></script>
-  <script>
-    // Mostrar información del cómic en el HTML
-    document.getElementById("nombreComic").textContent = comic.nombreComic;
-    document.getElementById("genero").textContent = comic.genero;
-    document.getElementById("autores").textContent = comic.autores;
-    document.getElementById("members").textContent = comic.members;
-    document.getElementById("descripcionComic").textContent = comic.sinopsis;
-
-    const contenedor = document.getElementById("listaCapitulos");
-
-    comic.capitulos.forEach(cap => {
-      const seccion = document.createElement("article");
-      seccion.innerHTML = `
-        <h3>${cap.name}</h3>
-        <p><strong>Año:</strong> ${cap.year}</p>
-        <p><strong>Personajes:</strong> ${cap.personajes}</p>
-        <p><strong>Descripción:</strong> ${cap.descripcion}</p>
-      `;
-      contenedor.appendChild(seccion);
-    });
-  </script>
 </body>
-</html>
 </html>
