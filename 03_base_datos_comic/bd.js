@@ -1,4 +1,5 @@
 let comic = {
+  "year": "2025",
   "nombreComic": "vovi a nacer",
   "numeroEpisodios": "1",
   "genero": "introspectivo",
