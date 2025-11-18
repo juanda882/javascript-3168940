@@ -6,6 +6,18 @@ let comic = {
   "sinopsis": "carlos se encuentra en la playa reflexionando y se encuenytra con una vercion suya de cuando era niño",
   "members":"carlos vives y carlos niño",
   "autores":"juan david y maria fernanda",
+  "personajes":[
+    {
+      "nombre": "carlos vives",
+      "descripcion":"lorem...",
+      "imagen":"./playa.jpg",
+    },
+    {
+      "nombre": "carlos niño",
+      "descripcion":"lorem...",
+      "imagen":"./guitarraniño.jpg",
+    }
+  ],
   "capitulos": [,
   
     {
