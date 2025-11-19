@@ -9,13 +9,14 @@ let comic = {
   "personajes":[
     {
       "nombre": "carlos vives",
-      "descripcion":"lorem...",
-      "imagen":"./playa.jpg",
+      "descripcion":"Un hombre introspectivo que vuelve a la playa donde comenzó todo.buscando respuestas sobre su pasado, su identidad y su camino. "
+        ,
+      "imagen":"./carlos.jpg",
     },
     {
       "nombre": "carlos niño",
       "descripcion":"lorem...",
-      "imagen":"./guitarraniño.jpg",
+      "imagen":"./niño.jpg",
     }
   ],
   "capitulos": [,

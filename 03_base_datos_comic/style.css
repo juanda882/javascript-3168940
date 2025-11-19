@@ -132,3 +132,55 @@ footer {
   border-top: 1px solid #5C4033;
   font-size: 0.9rem;
 }
+
+
+/* --- PERSONAJES --- */
+.personajes {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #3E2C1C;
+}
+
+.personajes h2 {
+  color: #D9B48F;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.personajes-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.personaje {
+  background-color: #5C4033;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personaje:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.personaje img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.personaje h3 {
+  color: #D9B48F;
+  margin-bottom: 0.5rem;
+}
+
+.personaje p {
+  color: #F5E6D3;
+  font-size: 0.95rem;
+}
