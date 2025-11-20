@@ -26,3 +26,21 @@ console.log(infocomic);
         `
         cardPersonajes.appendChild(div);
     })
+
+// CAPITULOS //
+
+
+const cardCapitulos = document.querySelector('.cards');
+
+comic.capitulos.forEach( char => {
+        //crear elementos dinamicamente con javascript
+        const div = document.createElement('div');
+        div.classList.add('card');
+        div.innerHTML = `
+        <img src="${char.portada}"  alt="">
+        <h3>${char.name}</h3>
+        <p>${char.descripcion}</p>
+    
+        `
+        cardCapitulos.appendChild(div);
+    })

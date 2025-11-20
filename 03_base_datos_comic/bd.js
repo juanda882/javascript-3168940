@@ -11,12 +11,13 @@ let comic = {
       "nombre": "carlos vives",
       "descripcion":"Un hombre introspectivo que vuelve a la playa donde comenzó todo.buscando respuestas sobre su pasado, su identidad y su camino. "
         ,
-      "imagen":"./carlos.jpg",
+      "imagen":"./carlos.png",
     },
+
     {
       "nombre": "carlos niño",
-      "descripcion":"lorem...",
-      "imagen":"./niño.jpg",
+      "descripcion":"Un niño curioso y frustrado que representa la versión joven de Carlos. A través de su interacción con el adulto, explora temas de identidad, pertenencia y autodescubrimiento.",
+      "imagen":"./niño.png",
     }
   ],
   "capitulos": [,
@@ -25,7 +26,7 @@ let comic = {
       "id": 1,
       "name": "el llamdo del mar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["img/..."],
+      "portada": ["./bruma.png"],
       "year": "2025",
       "capitulos": "1",
       "descripcion": "carlos reflexiona en la playa y se encuentra a un niño frustrado"
@@ -34,7 +35,7 @@ let comic = {
       "id": 2,
       "name": "ecos del camino",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["img/..."],
+      "portada": ["./ciudad.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "carlos y el niño se adentran a un aventura de recuerdos"
@@ -44,7 +45,7 @@ let comic = {
       "id": 3,
       "name": "el despeertar",
       "personajes": "carlos vives y carlos niño" ,
-      "portada": ["img/..."],
+      "portada": ["./concierto.png"],
       "year": "2025",
       "capitulos": "3",
       "descripcion": "carlos despierta en la playa agradecido por haber vuelto a ver su proceso"
